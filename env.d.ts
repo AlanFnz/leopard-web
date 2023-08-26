@@ -1,3 +1,5 @@
 namespace NodeJS {
-  interface ProcessEnv {}
+  interface ProcessEnv {
+    NEXT_PUBLIC_APP_URL: string;
+  }
 }
