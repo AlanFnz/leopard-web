@@ -1,15 +1,11 @@
-import '@/styles/globals.css';
-
-import { Dialog } from '@/components/ui/Dialog';
-
-export default function RootLayout({
-  children,
-}: {
+interface AuthLayoutProps {
   children: React.ReactNode;
-}) {
+}
+
+export default function AuthLayout({ children }: AuthLayoutProps) {
   return (
-    <>
-      <Dialog>{children}</Dialog>
-    </>
+    <div className='flex min-h-screen justify-center items-center overflow-hidden'>
+      <main style={{ width: '45%' }}>{children}</main>
+    </div>
   );
 }
