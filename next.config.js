@@ -5,11 +5,15 @@ const nextConfig = {
     styledComponents: true,
   },
   images: {
-    domains: ['i.ibb.co'],
+    domains: ['unsplash.com'],
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'i.ibb.co',
+      },
+      {
+        protocol: 'https',
+        hostname: 'unsplash.com',
       },
     ],
   },
